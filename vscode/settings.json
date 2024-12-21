@@ -1,0 +1,73 @@
+{
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnSave": true,
+  "explorer.autoReveal": true,
+  "explorer.openEditors.visible": 1,
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "explorer.compactFolders": false,
+  "editor.inlineSuggest.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "redhat.telemetry.enabled": true,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.host": "localhost",
+  "liveServer.settings.ignoreFiles": [
+      "**/*.scss",
+      "**/*.sass"
+  ],
+  "sonarlint.rules": {
+      "Web:S6819": {
+          "level": "off"
+      },
+      "Web:S6842": {
+          "level": "off"
+      },
+      "Web:AvoidCommentedOutCodeCheck": {
+          "level": "off"
+      }
+  },
+  "vue.server.hybridMode": true,
+  "database-client.autoSync": true,
+  "extensions.ignoreRecommendations": false,
+  "[vue]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "githubPullRequests.pullBranch": "never",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.statusBar.visible": true,
+  "workbench.tree.indent": 20,
+  "workbench.colorCustomizations": {
+      "editor.background": "#1E1E1E",
+      "sideBar.background": "#252526",
+      "statusBar.background": "#007ACC",
+      "activityBar.background": "#333333"
+  },
+  "workbench.fontAliasing": "antialiased",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "Fira Code, monospace",
+  "terminal.integrated.cursorBlinking": true,
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
+  "typescript.tsserver.log": "off",
+  "prettier.requireConfig": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": false,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontLigatures": "liga",
+}
