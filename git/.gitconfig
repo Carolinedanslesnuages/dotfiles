@@ -1,0 +1,103 @@
+[user]
+        email = line.robillard@gmail.com
+        name = Caroline Robillard
+[alias]
+        aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
+        ap = add -p
+        br = branch
+        bv = "br -vv"
+        cb = "rev-parse --abbrev-ref HEAD" # *c*urrent *b*ranch
+        ci = commit
+        co = checkout
+        cm = commit -m
+        df = diff
+        ds = diff --staged
+        h = log --format='%C(yellow)%h%Creset %C(red)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --graph
+        last = !git --no-pager log -1 -p --stat HEAD
+        l = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+        lg = log --oneline --decorate --graph
+        oops = commit --amend
+        oopn = commit --amend --no-edit
+        pf = push --force-with-lease
+        sre = "!f() { git log -S$1 --pickaxe-regex ; }; f"
+        st = status
+        sw = switch
+        s = switch
+        sc = "switch -c"
+        # Undo last commit but keep changed files in stage
+  uncommit = reset --soft HEAD~1
+        unstage = reset HEAD
+        us = unstage
+        untrack = rm --cache --
+        root = rev-parse --show-toplevel
+        cp = cherry-pick
+        cpn = cherry-pick -n
+        find = lg --grep
+        review-local = "!git lg @{push}.."
+        rs = restore --staged
+        r = restore
+[push]
+        default = simple
+[status]
+        showUntrackedFiles = all
+        short = true
+[diff]
+        # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+        # Show renames/moves as such
+  renames = true
+        tool = vscode
+        wordRegex = .
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[branch]
+        autosetuprebase = always
+        rebase = preserve
+[credential]
+        helper = cache --timeout=3600
+[color]
+        ui = auto
+[rerere]
+        enabled = true
+[core]
+  pager = less -Fr
+        editor = vim
+[init]
+        defaultBranch = main
+[fetch]
+        prune = true
+[grep]
+  break = true
+  heading = true
+  lineNumber = true
+  # Consider most regexes to be ERE
+  extendedRegexp = true
+[log]
+        abbrevCommit = true
+        # Automatically --follow when given a single path
+  follow = true
+[merge]
+  # Display common-ancestor blocks in conflict hunks
+  # conflictStyle = diff3
+  # Disable fast-forward merges as default merge strategy.
+  # Force explicit call of `git merge --ff …`.
+  ff = false
+[mergetool]
+  # Clean up backup files created by merge tools on tool exit
+  keepBackup = false
+  # Clean up temp files created by merge tools on tool exit
+  keepTemporaries = false
+  # Put the temp files in a dedicated dir anyway
+  writeToTemp = true
+  # Auto-accept file prompts when launching merge tools
+  prompt = false
+[push]
+        followTags = true
+[color "branch"]
+  # Blue on black is hard to read in git branch -vv: use cyan instead
+  upstream = cyan
+[tag]
+  # Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
+  sort = version:refname
+[color "status"]
+        untracked = cyan
