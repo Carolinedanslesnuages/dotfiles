@@ -1,23 +1,21 @@
-# Dotfiles Templates
+Modèle de Dotfiles 🛠️
 
-## Introduction
+Introduction 📄
 
-**Dotfiles Templates**
+Modèles de Dotfiles
 
-This project aims to provide customizable dotfiles templates to facilitate the configuration and management of your development environment or system.
+Ce projet a pour objectif de fournir des modèles de fichiers de configuration (dotfiles) personnalisables pour faciliter la configuration et la gestion de votre environnement de développement ou de votre système. 🚀
 
-## Why Use Dotfiles
+Pourquoi utiliser les Dotfiles 🤔
 
-Dotfiles are configuration files that allow you to personalize and automate your work environment. By versioning your dotfiles, you can:
+Les dotfiles sont des fichiers de configuration qui vous permettent de personnaliser et d’automatiser votre environnement de travail. En versionnant vos dotfiles, vous pouvez :
+	•	Standardiser votre environnement 🖥️ sur différentes machines.
+	•	Partager vos configurations 🤝 avec d’autres utilisateurs ou collaborateurs.
+	•	Simplifier la configuration 🛠️ de nouveaux systèmes rapidement et efficacement.
 
-- **Standardize your environment** across different machines.
-- **Share your configurations** with other users or collaborators.
-- **Simplify the setup** of new systems quickly and efficiently.
+Structure du dépôt 📂
 
-## Repository Structure
-
-Currently, this repository is under development. Soon, you will find:
-
-- **Dotfiles Templates**: Configurations for common tools such as Bash, Zsh, Vim, Git, etc.
-- **Installation Instructions**: Guides to install and apply the dotfiles on your system.
-- **Automation Scripts**: Scripts to automate the deployment and updating of configurations.
+Ce dépôt est actuellement en cours de développement. Bientôt, vous y trouverez :
+	•	Modèles de Dotfiles 📄 : Configurations pour des outils courants tels que Bash, Zsh, Vim, Git, etc.
+	•	Instructions d’installation 📝 : Guides pour installer et appliquer les dotfiles sur votre système.
+	•	Scripts d’automatisation 🤖 : Scripts pour automatiser le déploiement et la mise à jour des configurations.
